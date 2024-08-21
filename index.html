@@ -2,6 +2,7 @@
     <head>
       <meta charset="utf-8">
       <title>Mundo jurássico</title>
+      <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
@@ -24,6 +25,8 @@
             de formas e tamanhos, desde o <i>imenso <strong>Tyrannosaurus rex</strong> até o ágil <strong>velociraptor</strong></i>.
         </p> 
         
+        <img src="images/Dinossauros.jpg" alt="Dinossauros" width="500" height="auto">
+
         <h2>O Que São Dinossauros?</h2>
         <p>
             Dinossauros são um grupo de répteis que viveram durante a era Mesozoica. Eles pertencem à clade Dinosauria e 
@@ -66,7 +69,35 @@
              e a história da Terra.
         </p> 
 
+        <img src="images/Dinossauros2.jpg" alt="Dinossauros" width="500" height="auto">
 
+        <br><br>
+        <hr>
+
+        <h3>Formulário: Qual seu Dinossauro preferido?</h3>
+        <form action="/enviar" method="post">
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+    
+            <label for="idade">Sua Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" max="120" required>
+            <br><br>
+    
+            <label for="dinossauro">Qual dinossauro você mais gosta?</label>
+            <select id="dinossauro" name="dinossauro" required>
+                <option value="t-rex">Tyrannosaurus rex</option>
+                <option value="spinosaurus">Spinosaurus</option>
+                <option value="velociraptor">Velociraptor</option>
+                <option value="triceratops">Triceratops</option>
+                <option value="brachiosaurus">Brachiosaurus</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <hr>
+        <br><br>
 
         <footer>
             <div class="footer-content">
